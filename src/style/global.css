@@ -1,0 +1,44 @@
+body { 
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 100%;
+}
+
+.container-section1 {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/bg-covid.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-section2 {
+  min-height: 100vh;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px -1px 18px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px -1px 18px -9px rgba(0,0,0,0.75);
+  box-shadow: 0px -1px 18px -9px rgba(0,0,0,0.75);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title .navbar-brand {
+  font-size: 25px;
+}
+.title span {
+  font-size: 12px;
+}
