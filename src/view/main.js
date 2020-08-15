@@ -76,14 +76,14 @@ export default () => {
             display: true,
             scaleLabel: {
               display: true,
-              labelString: 'Month'
+              labelString: 'Hari'
             }
           }],
           yAxes: [{
             display: true,
             scaleLabel: {
               display: true,
-              labelString: 'Value'
+              labelString: 'Jumlah Orang'
             }
           }]
         }

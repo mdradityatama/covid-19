@@ -15,7 +15,7 @@ class RingkasanInfo extends HTMLElement
   {
     this.innerHTML = 
     `
-      <div class="wrapper text-center mb-5">
+      <div class="wrapper text-center text-light mb-5">
         <h1 class="count">${this._confirmed}</h1>
         <span>Covid - 19</span>
       </div>
