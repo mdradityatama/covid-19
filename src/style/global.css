@@ -1,6 +1,7 @@
 body { 
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 section {
@@ -8,15 +9,13 @@ section {
 }
 
 .container-section1 {
-  height: 100vh;
+  margin-top: 30px;
+  min-height: 90vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/bg-covid.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .container-section2 {
@@ -41,4 +40,24 @@ section {
 }
 .title span {
   font-size: 12px;
+}
+
+.border-red {
+  border-radius: 10px;
+  border-bottom: 4px solid red;
+}
+.border-green {
+  border-radius: 10px;
+  border-bottom: 4px solid green;
+}
+.border-black {
+  border-radius: 10px;
+  border-bottom: 4px solid rgb(110, 110, 110);
+}
+
+@media screen and (max-width: 576px) {
+  .container-section1 {
+    padding-top: 150px;
+    padding-bottom: 30px;
+  }
 }

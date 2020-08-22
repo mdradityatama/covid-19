@@ -14,34 +14,35 @@ class RingkasanInfo extends HTMLElement
   render()
   {
     this.innerHTML = 
-    `
-      <div class="wrapper text-center text-light mb-5">
-        <h1 class="count">${this._confirmed}</h1>
-        <span>Covid - 19</span>
-      </div>
+    ` <div class="wrapper d-flex flex-column align-items-center">
+        <div class="text-light mb-5 text-center">
+          <h1 class="count">${this._confirmed}</h1>
+          <span>Covid - 19</span>
+        </div>
 
-      <div class="row d-flex justify-content-end">
-        <div class="col-md">
-          <div class="card shadow" style="width: 13rem;">
-            <div class="card-body text-center">
-              <h3>Positif</h3>
-              <p>${this._confirmed}</p>
+        <div class="row justify-content-center">
+        <div class="col-10 col-md mb-3">
+            <div class="card shadow border-red">
+              <div class="card-body text-center">
+                <h3>Positif</h3>
+                <p>${this._confirmed}</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md">
-          <div class="card shadow" style="width: 13rem;">
-            <div class="card-body text-center">
-              <h3>Sembuh</h3>
-              <p>${this._recovered}</p>
+          <div class="col-10 col-md mb-3">
+            <div class="card shadow border-green">
+              <div class="card-body text-center">
+                <h3>Sembuh</h3>
+                <p>${this._recovered}</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md">
-          <div class="card shadow" style="width: 13rem;">
-            <div class="card-body text-center">
-              <h3>Meninggal</h3>
-              <p>${this._deaths}</p>
+          <div class="col-10 col-md">
+            <div class="card shadow border-black">
+              <div class="card-body text-center">
+                <h3>Meninggal</h3>
+                <p>${this._deaths}</p>
+              </div>
             </div>
           </div>
         </div>

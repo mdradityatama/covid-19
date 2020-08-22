@@ -9,7 +9,7 @@ class NavBar extends HTMLElement
   {
     this.innerHTML = 
     `
-      <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light pt-4 pb-4">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light pt-lg-4 pb-lg-4">
         <div class="container"> 
           <div class="title">
             <a class="navbar-brand mr-0 d-block" href="#">JaSiVid-19</a>
@@ -18,8 +18,8 @@ class NavBar extends HTMLElement
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
               <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               <a class="nav-item nav-link" href="#">Informasi</a>
               <a class="nav-item nav-link" href="#">Kontak</a>

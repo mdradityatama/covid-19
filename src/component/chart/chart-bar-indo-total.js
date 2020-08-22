@@ -1,4 +1,3 @@
-
 export default (data) => {
   const chartGlobal = document.getElementById("myChart");
 
@@ -23,6 +22,7 @@ export default (data) => {
     }]
     },
     options: {
+      responsive: true,
         scales: {
             yAxes: [{
                 ticks: {
@@ -33,5 +33,3 @@ export default (data) => {
     }
   });
 }
-
-// export default { chartIndo };
