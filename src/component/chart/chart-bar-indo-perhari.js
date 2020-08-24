@@ -22,25 +22,22 @@ export default (resData) => {
       labels: dataChart.dateForLabels,
       datasets: [{
         label: 'Positif',
-        backgroundColor: ['rgb(255, 61, 103)'],
         data: dataChart.positif,
-        fill: false,
+        backgroundColor: 'rgb(255, 61, 103)',
+        fill: true,
       },{
         label: 'Sembuh',
-        fill: false,
-        backgroundColor: ['rgba(24, 235, 52, 0.75)'],
-        borderColor: ['rgba(24, 235, 52, 0.75)'],
         data: dataChart.sembuh,
+        backgroundColor: 'rgba(0, 222, 16, 0.8)',
       }, {
         label: 'Meninggal',
-        fill: false,
-        backgroundColor: ['rgba(0,0,0,0.75)'],
-        borderColor: ['rgba(0,0,0,0.75)'],
         data: dataChart.meninggal,
+        backgroundColor: 'rgba(0,0,0,0.75)',
       }]
     },
     options: {
       responsive: true,
+      maintainAspectRatio: false,
       tooltips: {
         mode: 'index',
         intersect: false,
@@ -50,20 +47,11 @@ export default (resData) => {
         intersect: true
       },
       scales: {
-        xAxes: [{
-          display: true,
-          scaleLabel: {
-            display: true,
-            labelString: 'Hari'
-          }
-        }],
-        yAxes: [{
-          display: true,
-          scaleLabel: {
-            display: true,
-            labelString: 'Jumlah Orang'
-          }
-        }]
+          yAxes: [{
+              ticks: {
+                  beginAtZero: true
+              }
+          }]
       }
     }
   });

@@ -23,6 +23,7 @@ export default (data) => {
     },
     options: {
       responsive: true,
+      maintainAspectRatio: false,
         scales: {
             yAxes: [{
                 ticks: {
