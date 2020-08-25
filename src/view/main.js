@@ -1,6 +1,7 @@
 import "../component/nav-bar";
 import "../component/ringkasan-info";
 import "../component/statistik-info";
+import "../component/kontak-info";
 import Chart from "chart.js";
 import MathdroCovid from "../data/mathdro-covid";
 

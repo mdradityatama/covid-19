@@ -24,15 +24,18 @@ export default (resData) => {
         label: 'Positif',
         data: dataChart.positif,
         backgroundColor: 'rgb(255, 61, 103)',
-        fill: true,
+        borderColor: 'rgb(255, 61, 103)',
+        fill: true
       },{
         label: 'Sembuh',
         data: dataChart.sembuh,
         backgroundColor: 'rgba(0, 222, 16, 0.8)',
+        fill: true
       }, {
         label: 'Meninggal',
         data: dataChart.meninggal,
         backgroundColor: 'rgba(0,0,0,0.75)',
+        fill: true
       }]
     },
     options: {

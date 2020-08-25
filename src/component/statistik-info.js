@@ -23,17 +23,17 @@ class StatistikInfo extends HTMLElement
           <div class="card shadow card-container">
             <div class="card-body text-center">
               <h3>Data Covid-19 di Indonesia</h3>
-              <div class="chart-wrapper" style="height: 50vh; width: 100%">
+              <div class="chart-wrapper" style="height: 80%; width: 100%">
                 <canvas id="myChart"></canvas>
               </div>
             </div>
           </div>
         </div>
       <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-          <div class="card shadow">
+          <div class="card shadow card-container">
               <div class="card-body text-center">
                 <h3>Data Covid-19 di Indonesia / Hari</h3>
-                <div class="chart-wrapper" style="height: 50vh; width: 100%">
+                <div class="chart-wrapper" style="height: 80%; width: 100%">
                   <canvas id="chart-covid-daily"></canvas>
                 </div>
               </div>
