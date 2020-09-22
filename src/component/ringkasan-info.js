@@ -1,13 +1,13 @@
+const numeral = require("numeral");
+
 class RingkasanInfo extends HTMLElement
 {
-  set infoGlobal(data)
+  set infoGlobal({confirmed, recovered, deaths})
   {
-    const {confirmed, recovered, deaths} = data;
-
-    this._confirmed = confirmed.value;
-    this._deaths = deaths.value;
-    this._recovered = recovered.value;
-
+    this._confirmed = numeral(confirmed.value).format("0,0");
+    this._deaths = numeral(deaths.value).format("0,0");
+    this._recovered = numeral(recovered.value).format("0,0");
+    
     this.render();
   }
 
@@ -16,8 +16,8 @@ class RingkasanInfo extends HTMLElement
     this.innerHTML = 
     ` <div class="wrapper d-flex flex-column align-items-center">
         <div class="text-light mb-5 text-center">
-          <h1 class="count">${this._confirmed}</h1>
-          <span>Covid - 19</span>
+          <h1 class="count"><b>${this._confirmed}<b></h1>
+          <span>Covid - 19 di Dunia</span>
         </div>
 
         <div class="row justify-content-center">

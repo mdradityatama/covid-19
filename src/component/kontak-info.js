@@ -13,7 +13,7 @@ class KontakInfo extends HTMLElement {
       <div class="row">
         <div class="col text-center">
           <a href="https://covid19.go.id/peta-sebaran">
-            <img src="https://covid19.go.id/storage/app/media/bersatu-lawan-covid-19.jpg" class="img-fluid">
+            <img src="https://covid19.go.id/storage/app/media/bersatu-lawan-covid-19.jpg" alt="Logo Covid-19 Pemerintah Indonsia" class="img-fluid">
           </a>
         </div>
       </div>

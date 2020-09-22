@@ -1,7 +1,5 @@
-export default (data) => {
+export default ({confirmed, recovered, deaths}) => {
   const chartGlobal = document.getElementById("myChart");
-
-  const {confirmed, recovered, deaths} = data;
 
   const chart = new Chart (chartGlobal, {
     type: 'bar',

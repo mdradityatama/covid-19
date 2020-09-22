@@ -1,4 +1,4 @@
-export default (resData) => {
+export default ({data}) => {
   const chartCovidDaily = document.getElementById("chart-covid-daily");
 
   const dataChart = {
@@ -8,7 +8,7 @@ export default (resData) => {
     meninggal: []
   }
 
-  resData.data.forEach(data => {
+  data.forEach(data => {
     const date = new Date(data.tanggal);
     dataChart.dateForLabels.push(`${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`);
     dataChart.positif.push(data.jumlahKasusBaruperHari);
@@ -16,7 +16,7 @@ export default (resData) => {
     dataChart.meninggal.push(data.jumlahKasusMeninggalperHari);
   })
 
-  var myBarChart = new Chart(chartCovidDaily, {
+  const myBarChart = new Chart(chartCovidDaily, {
     type: 'bar',
     data: {
       labels: dataChart.dateForLabels,
